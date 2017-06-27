@@ -16,12 +16,10 @@ Address.prototype.fullAddress = function() {
 }
 
 $(document).ready(function() {
-  // $("#button").click(function(event) {
-    // event.preventDefault();
-  //   $(".addition").append(".address");
-  // });
-  $("form#new-contact").submit(function(event) {
-    event.preventDefault();
+  $("#button").click(function() {
+    $(".output").show();
+  });
+  $("#button2").click(function() {
 
   var inputtedFirstName = $("input#new-first-name").val();
   var inputtedLastName = $("input#new-last-name").val();
